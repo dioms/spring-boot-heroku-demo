@@ -1,4 +1,4 @@
-package com.heroku.demo;
+package com.heroku.demo.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -13,6 +13,7 @@ public class Record {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+    
     @NotEmpty
     private String data;
 
